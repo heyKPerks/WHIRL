@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<!--Recipe Page-->
+  <head>
+    <title>Sweet-Pineapple</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+  </head>
+  <body>
+		<div id="page_wrapper">
+			<div id="header_wrapper">
+				<div id="header" class="contentContainer">
+					<div id="site_menu">
+						<ul>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn"><img id="site_menu_img" src="images\menu.png" alt="site menu"></a>
+								<div class="dropdown-content">
+									<a href="index.html">Home</a>
+									<a href="index.html">Favorites</a>
+									<a href="index.html">Following</a>
+									<a href="index.html">Recommended</a>
+								</div>
+							</li>
+						</ul>	
+					</div><!--site_menu"-->					
+					<div id="logo" class="headerBlock">
+						<a href="index.html"><img id="logo_img" src="images\whirl_logo.png" alt="logo image"></a>
+					</div><!--logo-->
+					<div id="search_bar_div" class="headerBlock">
+							<input id="search_bar" type="text" name="search" size="100" maxlength="100" placeholder="Recipe Name, Ingredient, Tag, User Name" ></li>
+					</div><!--search_bar-->					
+					<div id="user_options" class="headerBlock">
+						<ul>						
+							<li class="bellDropdown">
+								<a href="javascript:void(0)" class="bellDropbtn"><img id="bell_img" src="images\bell.png" alt="notifications"></a>
+								<div class="bellDropdownContent">
+									<a href="#">None</a>
+								</div>
+							</li>						
+							<li><a href="jessica_profile.html">My Profile</a></li>
+							<li><a href="signup_personal.html">Sign Up</a></li>
+						</ul>
+					</div><!--user_options-->
+				</div><!--header-->
+			</div><!--header_wrapper-->
+			<div id="main_wrapper">
+				<div id="main" class="contentContainer">
+					<div id="recipe_header"style="background-image: url(images/Pineapple-Chicken-banner.jpg); height: 150px; width: 1200px;">>
+						<h1 id="user_name">Sweet Pineapple Chicken Quinoa Salad</h1>
+					</div><!--recipe_header-->
+					<div id="recipe_wrapper">
+						<div id="recipe_summary">
+							<h3 class="subheading">Summary</h3>
+							<p class="content">
+								Posted by, <span class="WHIRL">WHIRL</span> Rating 5
+								</br></br>
+								YIELD: 8 SERVINGS | PREP TIME: 10 MINS | COOK TIME: 12 MINS TOTAL TIME: 22 MINS </br>
+								A light and healthy quinoa salad tossed in a flavorful spice mix, and loaded with healthy wholesome ingredients like grilled chicken, salted pistachios, and shredded coconut!
+							</p>
+						</div>
+						<div id="recipe_ingredients">
+							<h3 class="subheading">Ingredients</h3>
+							<ul id="ingredient_list">
+								<li class="ingedient">4 cups water</li>
+								<li class="ingedient">2 cup uncooked quinoa</li>
+								<h4>Spices:</h4>
+								<li class="ingedient">2 Tablespoons olive oil</li>
+								<li class="ingedient">2 Tablespoons lemon juice</li>
+								<li class="ingedient">2 teaspoon ground ginger</li>
+								<li class="ingedient">1 1&#47;4 teaspoon ground cumin</li>
+								<li class="ingedient">1 teaspoon salt</li>
+								<h4>Add-ins:</h4>
+								<li class="ingedient">4 cups fresh arugula, roughly chopped</li>
+								<li class="ingedient">2 cups cooked chicken breast, chopped (canned, rotisserie, or grilled all work well)</li>
+								<li class="ingedient">1 1&#47;2 cup shelled, whole pistachios</li>
+								<li class="ingedient">1 cup chopped green onions</li>
+								<li class="ingedient">1 cup fresh cilantro, rinsed and finely chopped</li>
+								<li class="ingedient">1 cup chopped dried pineapple</li>
+								<li class="ingedient">1 cup dried cherries, roughly chopped</li>
+								<li class="ingedient">1 cup flaked, unsweetened coconut</li>																												
+							</ul><!--ingredient_list-->
+						</div><!--recipe_ingredients-->
+						<div id="recipe_steps">
+							<h3 class="subheading">Steps</h3>
+							<ol id="step_list">
+								<li class="step">In a medium saucepan, bring water to a boil. Add quinoa, cover and reduce heat to simmer for 12 minutes, or until water is completely absorbed.</li>
+								<li class="step">Transfer quinoa to a large bowl and allow to cool for at least 5 minutes. Add the spices to quinoa until mixed.</li>
+								<li class="step">Add remaining ingredients (add-in) until well evenly distributed.</li>
+								<li class="step">You can serve this at room temperature or cold. If serving more than 2 hours after preparing, store in the refrigerator in an airtight container for up to 5 days.</li>
+							</ol><!--step_list-->
+						</div><!--recipe_steps-->
+						<div id="recipe_reviews">
+							<h3 class="subheading">Reviews</h3>
+							<input id="review" type="text" name="reviw" size="100" maxlength="300" placeholder="Would you like to share your thoughts?" >
+							<a id="review_btn" href="" >Submit</a>		
+						</div><!--reviews-->
+					</div><!--recipe_wrapper-->
+					<div id="right_column">
+						<div id="recipe_actions">
+							<h4>Rank</h4>
+							<img id="stars" src="images\stars.png" alt="stars">
+							<a id="user_action_btn" href="" >Favorite</a>		
+						</div><!--recipe_actions-->
+						<div id="jump">
+							<h3 class="subheading"> Jump To</h3>
+							<ul id="jump_to">
+								<li class="jumpLink"><a href="#recipe_summary">Summary</a></li>
+								<li class="jumpLink"><a href="#recipe_ingredients">Ingredients</a></li>
+								<li class="jumpLink"><a href="#recipe_steps">Steps</a></li>
+								<li class="jumpLink"><a href="#recipe_steps">Reviews</a></li>
+							</ul><!--jump_to-->
+						</div>
+						<div id="recipe_tags">
+							<h3 class="subheading">Tags</h3>
+							<ul id="tag_list">
+								<li class="tag">#chicken</li>
+								<li class="tag">#easy</li>
+								<li class="tag">#stove</li>
+							</ul><!--tag_list-->
+						</div><!--recipe_tags-->
+					</div><!--right_column-->
+				</div><!--main-->
+			</div><!--main_wrapper-->
+		</div><!--page_wrappter-->
+	</body>
+</html>

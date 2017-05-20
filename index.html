@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!--WHIRL Home Page-->
+  <head>
+    <title>WHIRL</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+		<script type="text/javascript">
+			function showhide(id) {
+				var e = document.getElementById(id);
+				e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+			}
+		</script>
+  </head>
+  <body>
+		<div id="page_wrapper">
+			<div id="header_wrapper">
+				<div id="header" class="contentContainer">
+					<div id="site_menu">
+						<ul>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn"><img id="site_menu_img" src="images\menu.png" alt="site menu"></a>
+								<div class="dropdown-content">
+									<a href="index.html">Home</a>
+									<a href="index.html">Favorites</a>
+									<a href="index.html">Following</a>
+									<a href="index.html">Recommended</a>
+								</div>
+							</li>
+						</ul>	
+					</div><!--site_menu"-->					
+					<div id="logo" class="headerBlock" style="visibility: hidden;">
+						<a href="index.html"><img id="logo_img" src="images\whirl_logo.png" alt="logo image"></a>
+					</div><!--logo-->
+					<div id="search_bar_div" class="headerBlock" style="visibility: hidden;">
+							<input id="search_bar" type="text" name="search" size="100" maxlength="100" placeholder="Recipe Name, Ingredient, Tag, User Name" ></li>
+					</div><!--search_bar-->					
+					<div id="user_options" class="headerBlock">
+						<ul>						
+							<li class="bellDropdown">
+								<a href="javascript:void(0)" class="bellDropbtn"><img id="bell_img" src="images\bell.png" alt="notifications"></a>
+								<div class="bellDropdownContent">
+									<a href="#">None</a>
+								</div>
+							</li>						
+							<li><a href="jessica_profile.html">My Profile</a></li>
+							<li><a href="signup_personal.html">Sign Up</a></li>
+						</ul>
+					</div><!--user_options-->
+				</div><!--header-->
+			</div><!--header_wrapper-->
+			<div id="top_fold_wrapper">
+				<div id="top_fold" class="contentContainer">
+					<h1>WHIRL</h1>
+					<h2 id="tag_line">Wholesome, Heathy, Ingredients, Recipe Lists</h2>
+					<input id="front_search" type="text" name="search" size="100" maxlength="200"placeholder="Recipe Name, Ingredient, Tag, User Name" ></li>
+				</div><!--top_fold-->
+			</div><!--top_fold_container-->
+			<div id="tab_wrapper">
+				<div id="tabs" class="contentContainer">
+					<ul class="tabWrapper">
+						<li><a href="">New</a></li>
+						<li><a href="">Popular</a></li>
+						<li><a href="">Recommended</a></li>
+						<li><a href="">Following</a></li>
+					</ul>
+					<ul class="btnWrapper">
+						<li class="filterbtn"><a href="javascript:showhide('filter')">Filter</a></li>
+					</ul>
+				</div><!--tabs-->
+			</div><!--tab_wrapper-->
+			<div id="main_wrapper">
+				<div id="main" class="contentContainer">
+					<div id="filter">
+						<form id="filter_form">
+							<ul id="filter_category" class="filterGroup">
+								<h4 class="filterHeading">Category</h4>
+								<li><input type="checkbox" name="category" value="american">American</li>
+								<li><input type="checkbox" name="category" value="asian">Asian</li>
+								<li><input type="checkbox" name="category" value="italian">Italian</li>
+								<li><input type="checkbox" name="category" value="mexican">Mexican</li>
+							</ul><!--filter_category-->
+							<ul id="filter_difficulty" class="filterGroup">
+								<h4 class="filterHeading">Difficulty</h4>
+								<li><input type="checkbox" name="difficulty" value="simple">Simple</li>
+								<li><input type="checkbox" name="difficulty" value="medium">Medium</li>
+								<li><input type="checkbox" name="difficulty" value="advanced">Advanced</li>
+							</ul><!--filter_difficulty-->
+							<ul id="filter_time" class="filterGroup">
+								<h4 class="filterHeading">Time</h4>
+								<li><input type="checkbox" name="time" value="r1">5 - 10 mins.</li>
+								<li><input type="checkbox" name="time" value="r2">15 - 30 mins.</li>
+								<li><input type="checkbox" name="time" value="r3">45 mins. - 1 hr.</li>
+								<li><input type="checkbox" name="time" value="r4">> 1 hr.</li>
+							</ul><!--filter_time-->
+							<ul id="filter_diet" class="filterGroup">
+								<h4 class="filterHeading">Diet</h4>
+								<li><input type="checkbox" name="diet" value="glutenFree">Gluten Free</li>
+								<li><input type="checkbox" name="diet" value="vegan">Vegan</li>
+								<li><input type="checkbox" name="diet" value="vegetarian">Vegetarian</li>
+							</ul><!--filter_diet-->
+							<ul id="filter_budget" class="filterGroup">
+							  <h4 class="filterHeading">Budget</h4>
+								<li><input type="checkbox" name="budget" value="r1">$5 - 10</li>
+								<li><input type="checkbox" name="budget" value="r2">$15 - 20</li>
+								<li><input type="checkbox" name="budget" value="r3">$25 - 30</li>
+								<li><input type="checkbox" name="budget" value="r4">> $30</li>
+							</ul><!--filter_budget-->
+							<ul id="filter_appliance" class="filterGroup">
+							  <h4 class="filterHeading">Appliance</h4>
+								<li><input type="checkbox" name="appliance" value="oven">Oven</li>
+								<li><input type="checkbox" name="appliance" value="stove">Stove Top</li>
+								<li><input type="checkbox" name="appliance" value="grill">Grill</li>
+							</ul><!--filter_appliance-->
+					</div><!--filter-->
+					<div id="cards_wrapper">
+						<div class="card">
+							<h4 class="cardTitle"><a href="cinnamon-crunch-banana-bread.html">Cinnamon Crunch Banana Bread</a></h4>
+							<a class="favorite" href="">Favorite</a>
+							<a href="cinnamon-crunch-banana-bread.html"><img class="cardImage" src="images\cinnamon-crunch.jpg" alt="recipe image"></a>
+							<ul class="cardTags">
+								<li class="tag">#breakfast</li>
+								<li class="tag">#medium</li>
+								<li class="tag">#oven</li>
+							</ul><!--carTags-->
+						</div><!--card-->				
+						<div class="card">
+							<h4 class="cardTitle"><a href="Sweet-Pineapple.html">Sweet Pineapple Chicken Quinoa Salad</a></h4>
+							<a class="favorite" href="">Favorite</a>
+							<a href="Sweet-Pineapple.html"><img class="cardImage" src="images\Pineapple-Chicken.jpg" alt="recipe image"></a>
+							<ul class="cardTags">
+								<li class="tag">#15-30mins</li>
+								<li class="tag">#chicken</li>
+								<li class="tag">#cold</li>
+							</ul><!--carTags-->
+						</div><!--card-->				
+						<div class="card">
+							<a href="pesto-salmon.html"><h4 class="cardTitle"><a href="pesto-salmon.html">Pesto Salmon and Italian Veggies in Foil</a></h4>
+							<a class="favorite" href="">Favorite</a>
+							<a href="pesto-salmon.html"><img class="cardImage" src="images\pesto-salmon-card.jpg" alt="recipe image"></a>
+							<ul class="cardTags">
+								<li class="tag">#dinner</li>
+								<li class="tag">#medium</li>
+								<li class="tag">#salmon</li>
+							</ul><!--carTags-->
+						</div><!--card-->						
+					</div><!--cards_wrapper-->
+				</div><!--main-->
+			</div><!--main_wrapper-->
+		</div><!--page_wrapper-->
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!--sign up- personal-->
+  <head>
+    <title>signup-personal</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+  </head>
+  <body>
+		<div id="page_wrapper">
+			<div id="header_wrapper">
+				<div id="header" class="contentContainer">
+					<div id="site_menu">
+						<ul>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn"><img id="site_menu_img" src="images\menu.png" alt="site menu"></a>
+								<div class="dropdown-content">
+									<a href="index.html">Home</a>
+									<a href="index.html">Favorites</a>
+									<a href="index.html">Following</a>
+									<a href="index.html">Recommended</a>
+								</div>
+							</li>
+						</ul>	
+					</div><!--site_menu"-->					
+					<div id="logo" class="headerBlock">
+						<a href="index.html"><img id="logo_img" src="images\whirl_logo.png" alt="logo image"></a>
+					</div><!--logo-->
+					<div id="search_bar_div" class="headerBlock">
+							<input id="search_bar" type="text" name="search" size="100" maxlength="100" placeholder="Recipe Name, Ingredient, Tag, User Name" ></li>
+					</div><!--search_bar-->					
+					<div id="user_options" class="headerBlock">
+						<ul>						
+							<li class="bellDropdown">
+								<a href="javascript:void(0)" class="bellDropbtn"><img id="bell_img" src="images\bell.png" alt="notifications"></a>
+								<div class="bellDropdownContent">
+									<a href="#">None</a>
+								</div>
+							</li>						
+							<li><a href="jessica_profile.html">My Profile</a></li>
+							<li><a href="signup_personal.html">Sign Up</a></li>
+						</ul>
+					</div><!--user_options-->
+				</div><!--header-->
+			</div><!--header_wrapper-->
+			<div id="main_wrapper">
+				<div id="main" class="contentContainer">
+					<div id="signup_content">
+						<h1 id="page_title">Welcome To WHIRL</h1>
+						<p class="pageInstr">
+							Post Recipes, Save Favorites, Follow Others
+						</p><!--pageInstr-->
+					</div><!--preferences_content-->	
+					<div id="sign_in">
+						<h3 class="subheading">LogIn</h3>
+						<form id="sign_in_form" action="user_profile.html">
+							<ul>
+								<li><input type="text" name="username" size="15" maxlength="15" placeholder="Username" required></li>
+								<li><input type="password" name="password" size="15" maxlength="15" placeholder="Password" required></li>
+								<li><button type="submit">Sign In</button></li>
+							</ul>
+						</form><!--sign_in_form-->
+					</div><!--sign_in-->
+					<div id="sign_up">
+						<h3 class="subheading">Sign Up</h3>
+						<form id="sign_up_form"action="signup_preferences.html">
+							<ul>
+								<li><input type="text" name="username" size="15" maxlength="15" placeholder="Username" required></li>
+								<li><input type="password" name="password" size="15" maxlength="15" placeholder="Password" required></li>
+								<li><input type="password" name="password" size="15" maxlength="15" placeholder="Confirm Password" required></li>
+								<li><input type="email" name="email" size="20" maxlength="25" placeholder="Email" required></li>
+								<li><button type="submit">Next</button></li>
+							</ul>
+						</form><!--sign_in_form-->
+					</div><!--sign_up-->
+				</div><!--main-->
+			</div><!--main_wrapper-->
+		</div><!--page_wrapper-->
+	</body>
+</html>

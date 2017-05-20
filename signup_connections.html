@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--sign up-connections-->
+  <head>
+    <title>signup-connections</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+  </head>
+  <body>
+		<div id="page_wrapper">
+			<div id="header_wrapper">
+				<div id="header" class="contentContainer">
+					<div id="site_menu">
+						<ul>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn"><img id="site_menu_img" src="images\menu.png" alt="site menu"></a>
+								<div class="dropdown-content">
+									<a href="index.html">Home</a>
+									<a href="index.html">Favorites</a>
+									<a href="index.html">Following</a>
+									<a href="index.html">Recommended</a>
+								</div>
+							</li>
+						</ul>	
+					</div><!--site_menu"-->					
+					<div id="logo" class="headerBlock">
+						<a href="index.html"><img id="logo_img" src="images\whirl_logo.png" alt="logo image"></a>
+					</div><!--logo-->
+					<div id="search_bar_div" class="headerBlock">
+							<input id="search_bar" type="text" name="search" size="100" maxlength="100" placeholder="Recipe Name, Ingredient, Tag, User Name" ></li>
+					</div><!--search_bar-->					
+					<div id="user_options" class="headerBlock">
+						<ul>						
+							<li class="bellDropdown">
+								<a href="javascript:void(0)" class="bellDropbtn"><img id="bell_img" src="images\bell.png" alt="notifications"></a>
+								<div class="bellDropdownContent">
+									<a href="#">None</a>
+								</div>
+							</li>						
+							<li><a href="jessica_profile.html">My Profile</a></li>
+							<li><a href="signup_personal.html">Sign Up</a></li>
+						</ul>
+					</div><!--user_options-->
+				</div><!--header-->
+			</div><!--header_wrapper-->
+			<div id="main_wrapper">
+				<div id="main" class="contentContainer">
+					<div id="tabs">
+						<ul id="sign_up_status"class="tabWrapper">
+							<li><a href="signup_personal.html">User Information</a></li>
+							<li><a href="signup_preferences.html">Preferences</a></li>
+							<li><a href="signup_connections.html">Connections</a></li>
+						</ul>
+					</div><!--tabs-->
+					<div id="connections_content">
+						<h1 id="page_title">Connections</h1>
+						<p class="pageInstr">
+							Find connections to follow.
+						</p><!--pageInstr-->						
+					</div><!--connections_content-->	
+					<div id="connections_container">
+						<form id="connections_form">
+							<form id="search_form">
+								<input type="text" name="search" size="15" maxlength="15" placeholder="Search for User Name" >
+								<button type="submit">Search</button>
+							</form><!--search_form-->
+							<ul id="connections_list">
+								<li class="connection"><input type="checkbox" name="connection" value="Sam">Sam</li>
+								<li class="connection"><input type="checkbox" name="connection" value="natalie">Jessica</li>
+							</ul><!--connections_list-->
+						</form><!--connections_form-->
+					</div><!--connections_container-->
+					<div id="bottom_nav_wrapper">
+						<ul id="bottom_nav">
+							<li><a href="signup_preferences.html">Back</a></li>
+							<li><a href="jessica_profile.html">Skip</a></li>
+							<li><a href="jessica_profile.html">Finish</a></li>
+						</ul>
+					</div><!--bottom_nav-->
+				</div><!--main-->
+			</div><!--main_wrapper-->
+		</div><!--page_wrapper-->
+	</body>
+</html>
